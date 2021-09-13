@@ -35,6 +35,8 @@ class LinearRegression:
             x = np.concatenate([intercept, x], axis=1)
         return np.matmul(x, self.w).squeeze()
 
+    def get_params(self):
+        return self.w
 
 
 if __name__ == '__main__':
